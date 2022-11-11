@@ -149,7 +149,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD"><span class="nav-number">1.</span> <span class="nav-text">下载</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#VScode%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="nav-number">2.</span> <span class="nav-text">VScode环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#tasks-json%E9%85%8D%E7%BD%AE"><span class="nav-number">2.1.</span> <span class="nav-text">tasks.json配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#c-cpp-properties%E9%85%8D%E7%BD%AE"><span class="nav-number">2.2.</span> <span class="nav-text">c_cpp_properties配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B3%A8%E9%87%8A%E6%8E%89matplotlibcpp-h%E4%B8%AD%E4%B8%A4%E8%A1%8C%E4%BB%A3%E7%A0%81"><span class="nav-number">2.3.</span> <span class="nav-text">注释掉matplotlibcpp.h中两行代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95"><span class="nav-number">2.4.</span> <span class="nav-text">测试</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD"><span class="nav-number">1.</span> <span class="nav-text">下载</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#vscode%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="nav-number">2.</span> <span class="nav-text">VScode环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#tasks.json%E9%85%8D%E7%BD%AE"><span class="nav-number">2.1.</span> <span class="nav-text">tasks.json配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#c_cpp_properties%E9%85%8D%E7%BD%AE"><span class="nav-number">2.2.</span> <span class="nav-text">c_cpp_properties配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B3%A8%E9%87%8A%E6%8E%89matplotlibcpp.h%E4%B8%AD%E4%B8%A4%E8%A1%8C%E4%BB%A3%E7%A0%81"><span class="nav-number">2.3.</span> <span class="nav-text">注释掉matplotlibcpp.h中两行代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95"><span class="nav-number">2.4.</span> <span class="nav-text">测试</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -294,57 +294,57 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h1><p><a target="_blank" rel="noopener" href="https://github.com/lava/matplotlib-cpp">Github</a><br><a target="_blank" rel="noopener" href="https://gitcode.net/mirrors/lava/matplotlib-cpp">GitCode</a></p>
+        <h1 id="下载">下载</h1>
+<p><a target="_blank" rel="noopener" href="https://github.com/lava/matplotlib-cpp">Github</a> <a
+target="_blank" rel="noopener" href="https://gitcode.net/mirrors/lava/matplotlib-cpp">GitCode</a></p>
 <blockquote>
 <p>GitCode会快一点</p>
 </blockquote>
 <p>下载后随便放在一个无中文的<a id="info">目录</a>下就可以</p>
 <p>解压后将其改名为<code>matplotlibcpp</code></p>
-<h1 id="VScode环境搭建"><a href="#VScode环境搭建" class="headerlink" title="VScode环境搭建"></a>VScode环境搭建</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43769166/article/details/118365416?spm=1001.2101.3001.6661.1&amp;depth_1-utm_relevant_index=1">参考CSDN</a></p>
-<h2 id="tasks-json配置"><a href="#tasks-json配置" class="headerlink" title="tasks.json配置"></a><code>tasks.json</code>配置</h2><p>在<code>tasks.json</code>文件中的<code>tasks.args</code>内，</p>
-<p><code>&quot;-g&quot;,&quot;$&#123;file&#125;&quot;,</code>与<code>&quot;-o&quot;,</code>之间依次添加如下路径</p>
+<h1 id="vscode环境搭建">VScode环境搭建</h1>
+<p><a
+target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43769166/article/details/118365416?spm=1001.2101.3001.6661.1&amp;depth_1-utm_relevant_index=1">参考CSDN</a></p>
+<h2 id="tasks.json配置"><code>tasks.json</code>配置</h2>
+<p>在<code>tasks.json</code>文件中的<code>tasks.args</code>内，</p>
+<p><code>"-g","$&#123;file&#125;",</code>与<code>"-o",</code>之间依次添加如下路径</p>
 <blockquote>
 <p>根据自己的实际路径进行配置。</p>
 </blockquote>
-<ol>
-<li> <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;-I&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="string">&quot;C:/c++_libraries/matplotlibcpp&quot;</span><span class="punctuation">,</span>  <span class="comment">// matplotlibcpp.h路径</span></span><br></pre></td></tr></table></figure>
-<p> 此处<a id="info3">matplotlibcpp.h路径</a>为前文解压<code>matplotlib</code>的<a href="#info">目录</a></p>
+<ol type="1">
+<li><p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;-I&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="string">&quot;C:/c++_libraries/matplotlibcpp&quot;</span><span class="punctuation">,</span>  <span class="comment">// matplotlibcpp.h路径</span></span><br></pre></td></tr></table></figure></p>
+<p>此处<a id="info3">matplotlibcpp.h路径</a>为前文解压<code>matplotlib</code>的<a href="#info">目录</a></p>
 <blockquote>
 <p><code>C:/c++_libraries/</code>文件夹是我自己建的<code>C++</code>库文件夹</p>
-</blockquote>
-</li>
-<li> <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;-I&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="string">&quot;C:/Users/linru/AppData/Local/Programs/Python/Python310/include&quot;</span><span class="punctuation">,</span>  <span class="comment">// Python.h路径</span></span><br></pre></td></tr></table></figure>
-<p> 此处<a id="info4"><code>Python.h</code>路径</a>是<a inf="info1"><code>Python</code>文件夹</a>下<code>include</code>文件夹的目录</p>
-<p> 我这里的<code>Python.h</code>路径为<code>C:/Users/linru/AppData/Local/Programs/Python/Python310/</code></p>
-</li>
-<li> <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;-I&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="string">&quot;C:/Users/linru/AppData/Local/Programs/Python/Python310/Lib/site-packages/numpy/core/include&quot;</span><span class="punctuation">,</span>  <span class="comment">// numpy/arrayobject.h路径</span></span><br></pre></td></tr></table></figure>
-<p> 此处<a id="info5"><code>numpy/arrayobject.h</code>路径</a>为上文<a href="#info1"><code>Python.h</code>路径</a>下<code>numpy</code>库<code>include</code>文件目录</p>
-<p> 即<a href="#info1"><code>Python.h</code>路径</a>+<code>Lib/site-packages/numpy/core/include</code></p>
-</li>
-<li> <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;-L&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="string">&quot;C:/Users/linru/AppData/Local/Programs/Python/Python310&quot;</span><span class="punctuation">,</span>  <span class="comment">// python37.dll的所在目录</span></span><br></pre></td></tr></table></figure>
-<p> 此处<code>python37.dll</code>所在目录，即<a href="#info1"><code>Python.h</code>路径</a></p>
-</li>
-<li> <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;-l&quot;</span><span class="punctuation">,</span> <span class="string">&quot;python310&quot;</span><span class="punctuation">,</span>  <span class="comment">// python37.dll动态库</span></span><br></pre></td></tr></table></figure>
-<p> 此处<code>python37.dll</code>动态库，即<code>python</code>+<code>Python版本号</code></p>
-<p> 这里的版本是<code>3.10</code>，即<code>python310</code></p>
-</li>
+</blockquote></li>
+<li><p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;-I&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="string">&quot;C:/Users/linru/AppData/Local/Programs/Python/Python310/include&quot;</span><span class="punctuation">,</span>  <span class="comment">// Python.h路径</span></span><br></pre></td></tr></table></figure></p>
+<p>此处<a id="info4"><code>Python.h</code>路径</a>是<a inf="info1"><code>Python</code>文件夹</a>下<code>include</code>文件夹的目录</p>
+<p>我这里的<code>Python.h</code>路径为<code>C:/Users/linru/AppData/Local/Programs/Python/Python310/</code></p></li>
+<li><p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;-I&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="string">&quot;C:/Users/linru/AppData/Local/Programs/Python/Python310/Lib/site-packages/numpy/core/include&quot;</span><span class="punctuation">,</span>  <span class="comment">// numpy/arrayobject.h路径</span></span><br></pre></td></tr></table></figure></p>
+<p>此处<a id="info5"><code>numpy/arrayobject.h</code>路径</a>为上文<a href="#info1"><code>Python.h</code>路径</a>下<code>numpy</code>库<code>include</code>文件目录</p>
+<p>即<a href="#info1"><code>Python.h</code>路径</a>+<code>Lib/site-packages/numpy/core/include</code></p></li>
+<li><p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;-L&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="string">&quot;C:/Users/linru/AppData/Local/Programs/Python/Python310&quot;</span><span class="punctuation">,</span>  <span class="comment">// python37.dll的所在目录</span></span><br></pre></td></tr></table></figure></p>
+<p>此处<code>python37.dll</code>所在目录，即<a href="#info1"><code>Python.h</code>路径</a></p></li>
+<li><p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;-l&quot;</span><span class="punctuation">,</span> <span class="string">&quot;python310&quot;</span><span class="punctuation">,</span>  <span class="comment">// python37.dll动态库</span></span><br></pre></td></tr></table></figure></p>
+<p>此处<code>python37.dll</code>动态库，即<code>python</code>+<code>Python版本号</code></p>
+<p>这里的版本是<code>3.10</code>，即<code>python310</code></p></li>
 </ol>
-<h2 id="c-cpp-properties配置"><a href="#c-cpp-properties配置" class="headerlink" title="c_cpp_properties配置"></a><code>c_cpp_properties</code>配置</h2><p>在<code>c_cpp_properties</code>文件中的<code>configurations.includePath</code>内，依次增加如下路径</p>
-<ol>
-<li> <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;C:/c++_libraries/matplotlibcpp&quot;</span><span class="punctuation">,</span>  <span class="comment">// matplotlibcpp.h路径</span></span><br></pre></td></tr></table></figure>
-<p> 即上文的<a href="#info3"><code>matplotlibcpp.h</code>路径</a>，也就是前文解压<code>matplotlib</code>的<a href="#info">目录</a></p>
-</li>
-<li> <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;C:/Users/linru/AppData/Local/Programs/Python/Python310/include&quot;</span><span class="punctuation">,</span>  <span class="comment">// Python.h路径</span></span><br></pre></td></tr></table></figure>
-<p> 即上文的<a href="#info4"><code>Python.h</code>路径</a></p>
-</li>
-<li> <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;C:/Users/linru/AppData/Local/Programs/Python/Python310/Lib/site-packages/numpy/core/include&quot;</span>  <span class="comment">// numpy/arrayobject.h路径</span></span><br></pre></td></tr></table></figure>
-<p> 即上文的<a href="#info5"><code>numpy/arrayobject.h</code>路径</a></p>
-</li>
+<h2 id="c_cpp_properties配置"><code>c_cpp_properties</code>配置</h2>
+<p>在<code>c_cpp_properties</code>文件中的<code>configurations.includePath</code>内，依次增加如下路径</p>
+<ol type="1">
+<li><p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;C:/c++_libraries/matplotlibcpp&quot;</span><span class="punctuation">,</span>  <span class="comment">// matplotlibcpp.h路径</span></span><br></pre></td></tr></table></figure></p>
+<p>即上文的<a href="#info3"><code>matplotlibcpp.h</code>路径</a>，也就是前文解压<code>matplotlib</code>的<a href="#info">目录</a></p></li>
+<li><p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;C:/Users/linru/AppData/Local/Programs/Python/Python310/include&quot;</span><span class="punctuation">,</span>  <span class="comment">// Python.h路径</span></span><br></pre></td></tr></table></figure></p>
+<p>即上文的<a href="#info4"><code>Python.h</code>路径</a></p></li>
+<li><p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;C:/Users/linru/AppData/Local/Programs/Python/Python310/Lib/site-packages/numpy/core/include&quot;</span>  <span class="comment">// numpy/arrayobject.h路径</span></span><br></pre></td></tr></table></figure></p>
+<p>即上文的<a href="#info5"><code>numpy/arrayobject.h</code>路径</a></p></li>
 </ol>
 <blockquote>
 <p>需要重启<code>VScode</code>自动补全才能生效</p>
 </blockquote>
-<h2 id="注释掉matplotlibcpp-h中两行代码"><a href="#注释掉matplotlibcpp-h中两行代码" class="headerlink" title="注释掉matplotlibcpp.h中两行代码"></a>注释掉<code>matplotlibcpp.h</code>中两行代码</h2><p>找到解压<code>matplotlib</code>的<a href="#info">目录</a>下的<code>matplotlibcpp.h</code>文件并打开</p>
+<h2
+id="注释掉matplotlibcpp.h中两行代码">注释掉<code>matplotlibcpp.h</code>中两行代码</h2>
+<p>找到解压<code>matplotlib</code>的<a href="#info">目录</a>下的<code>matplotlibcpp.h</code>文件并打开</p>
 <p>将第<code>354</code>行</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">template</span> &lt;&gt; <span class="keyword">struct</span> <span class="title class_">select_npy_type</span>&lt;<span class="type">long</span> <span class="type">long</span>&gt; &#123; <span class="type">const</span> <span class="type">static</span> NPY_TYPES type = NPY_INT64; &#125;;</span><br></pre></td></tr></table></figure>
 <p>和第<code>356</code>行</p>
@@ -355,10 +355,15 @@
 <p>将第<code>354</code>行改为</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// template &lt;&gt; struct select_npy_type&lt;unsigned long long&gt; &#123; const static NPY_TYPES type = NPY_UINT64; &#125;;</span></span><br></pre></td></tr></table></figure>
 <p><kbd>Ctrl</kbd>+<kbd>s</kbd>保存</p>
-<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>测试代码</p>
+<h2 id="测试">测试</h2>
+<p>测试代码</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;matplotlibcpp.h&quot;</span></span></span><br><span class="line"><span class="keyword">namespace</span> plt = matplotlibcpp;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    plt::<span class="built_in">plot</span>(&#123;<span class="number">1</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">4</span>&#125;);</span><br><span class="line">    plt::<span class="built_in">show</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>运行结果</p>
-<p><img data-src="../img/VScode-C-环境搭建-Matplotlibcpp库-运行结果.png" alt="运行结果"></p>
+<figure>
+<img data-src="../img/VScode-C-环境搭建-Matplotlibcpp库-运行结果.png"
+alt="运行结果" />
+<figcaption aria-hidden="true">运行结果</figcaption>
+</figure>
 
     </div>
 
@@ -454,7 +459,7 @@
 
   
 
-  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"all","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"mhchem":true,"tags":"all","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
 <script src="/js/third-party/math/mathjax.js"></script>
 
 
