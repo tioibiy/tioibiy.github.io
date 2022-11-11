@@ -250,7 +250,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2022-11-11 21:20:46" itemprop="dateModified" datetime="2022-11-11T21:20:46+08:00">2022-11-11</time>
+      <time title="修改时间：2022-11-11 21:33:37" itemprop="dateModified" datetime="2022-11-11T21:33:37+08:00">2022-11-11</time>
     </span>
 
   
@@ -360,7 +360,7 @@ class="math inline">\(\infty\)</span></p>
 <p><span class="math display">\[
 \begin{equation}
     \forall i,j\in\mathbb{N}, j\ge 2,\aleph _{i+1}=j^{\mathbb{\aleph
-_i}}\label{a}
+_i}}\label{eqa}
 \end{equation}
 \]</span></p>
 <p>可以看到，<span class="math inline">\(\aleph
@@ -374,7 +374,7 @@ _i}}=b^{\mathbb{\aleph _i}}
 \infty&lt;2^\infty=10^\infty=10000000^\infty=\cdots
 \]</span></p>
 <p>很不幸，这是正确的</p>
-<p>我们不妨令<span class="math inline">\(\eqref{a}\)</span>式中的<span
+<p>我们不妨令<span class="math inline">\(\eqref{eqa}\)</span>式中的<span
 class="math inline">\(j=2\)</span></p>
 <p>则有</p>
 <p><span class="math display">\[
@@ -1008,7 +1008,7 @@ target="_blank" rel="noopener" href="http://niexiaotao.cn/">AirCloud预览博客
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2022-11-11 14:46:14" itemprop="dateModified" datetime="2022-11-11T14:46:14+08:00">2022-11-11</time>
+      <time title="修改时间：2022-11-11 21:33:03" itemprop="dateModified" datetime="2022-11-11T21:33:03+08:00">2022-11-11</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1027,7 +1027,7 @@ target="_blank" rel="noopener" href="http://niexiaotao.cn/">AirCloud预览博客
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>343</span>
+      <span>575</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -1054,6 +1054,8 @@ target="_blank" rel="noopener" href="http://niexiaotao.cn/">AirCloud预览博客
 <li><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">应改为：</span><br><span class="line"></span><br><span class="line">```markdown</span><br><span class="line">1. </span><br><span class="line">2. </span><br></pre></td></tr></table></figure>
 scripts <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3. </span><br></pre></td></tr></table></figure></li>
 </ol>
+<p>markdown中自定义做下-右上省略号</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">\newcommand\iddots&#123;\mathinner&#123;</span><br><span class="line"><span class="code">    \kern1mu\raise1pt&#123;.&#125;</span></span><br><span class="line"><span class="code">    \kern2mu\raise4pt&#123;.&#125;</span></span><br><span class="line"><span class="code">    \kern2mu\raise7pt&#123;\Rule&#123;0pt&#125;&#123;7pt&#125;&#123;0pt&#125;.&#125;</span></span><br><span class="line"><span class="code">    \kern1mu</span></span><br><span class="line"><span class="code">&#125;&#125;</span></span><br><span class="line"><span class="code">$$</span></span><br></pre></td></tr></table></figure>
 
       
     </div>
