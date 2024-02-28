@@ -88,7 +88,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">10</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">2</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">20</span></a></li><li class="menu-item menu-item-collect"><a href="/collect/" rel="section"><i class="fa fa-folder fa-fw"></i>收藏</a></li><li class="menu-item menu-item-todo"><a href="/TODO/" rel="section"><i class="fa fa-check-square fa-fw"></i>TODO</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">11</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">2</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">21</span></a></li><li class="menu-item menu-item-collect"><a href="/collect/" rel="section"><i class="fa fa-folder fa-fw"></i>收藏</a></li><li class="menu-item menu-item-todo"><a href="/TODO/" rel="section"><i class="fa fa-check-square fa-fw"></i>TODO</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -153,7 +153,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">20</span>
+          <span class="site-state-item-count">21</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -164,7 +164,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-count">11</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -190,6 +190,260 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://tioibiy.github.io/2024/02/28/P10173%E9%A2%98%E8%A7%A3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/img/icon.png">
+      <meta itemprop="name" content="Toby">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hi!">
+      <meta itemprop="description" content="Tioibiy的博客">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Hi!">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/02/28/P10173%E9%A2%98%E8%A7%A3/" class="post-title-link" itemprop="url">P10173题解</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2024-02-28 21:42:59 / 修改时间：21:43:21" itemprop="dateCreated datePublished" datetime="2024-02-28T21:42:59+08:00">2024-02-28</time>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>4k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>4 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="p10173-maximinimax">P10173 maxiMINImax</h1>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P10173">题目传送门</a></p>
+<h2 id="思路">思路：</h2>
+<p>题目要求对符合要求的区间进行计数，而判断一个区间是否符合要求，只和这个区间的最大/最小值有关，所以考虑每个
+<span class="math inline">\(a_i\)</span>
+能在哪些区间成为最大/最小值，然后枚举中间的区间最小值，用树状数组对两侧区间的信息整合。</p>
+<ol type="1">
+<li><p>单调队列处理出每个 <span class="math inline">\(a_i\)</span>
+两侧，第一个比它大和比它小的点的下标，记为 <span
+class="math inline">\(lb_i,ls_i,rb_i,rs_i\)</span>，其中 <span
+class="math inline">\(l,r\)</span> 表示左右，<span
+class="math inline">\(b,s\)</span> 表示比 <span
+class="math inline">\(a_i\)</span> 大/小。</p>
+<p>注：若找不到比 <span class="math inline">\(a_i\)</span> 大/小的，即
+<span class="math inline">\(a_i\)</span> 左/右的数全都比 <span
+class="math inline">\(a_i\)</span> 小/大，则记为数列边界，左侧为 <span
+class="math inline">\(0\)</span> ，右侧为 <span
+class="math inline">\(n+1\)</span> 。</p></li>
+<li><p>计算以 <span class="math inline">\(a_i\)</span>
+为最小值的区间数量 <span
+class="math inline">\(x_i=(i-ls_i)(rs_i-i)\)</span> ，以 <span
+class="math inline">\(a_i\)</span> 为最大值则记为 <span
+class="math inline">\(y_i=(i-lb_i)(rb_i-i)\)</span>。</p></li>
+<li><p>所求 <span class="math inline">\(ans\)</span> 即可表示为：</p>
+<p><span class="math display">\[
+ans=\sum_{1&lt;i&lt;n}\sum_{1\le j&lt;i,a_j&lt;a_i}\sum_{i&lt;k\le
+n,a_k&lt;a_i}
+(a_i-a_j)(a_i-a_k)x_iy_jy_k
+\]</span></p>
+<p>方便起见，用 <span
+class="math inline">\(\sum_{i},\sum_{j},\sum_{k}\)</span> 代指 <span
+class="math inline">\(\sum_{1&lt;i&lt;n},\sum_{1\le
+j&lt;i,a_j&lt;a_i},\sum_{i&lt;k\le
+n,a_k&lt;a_i}\)</span>，亦即枚举符合条件的三区间极值。</p>
+<ul>
+<li>注：由于 <span class="math inline">\(a_i&gt;a_j,a_k\)</span>，则“以
+<span class="math inline">\(a_i\)</span> 为最小值的区间”，与“以 <span
+class="math inline">\(a_j,a_k\)</span>
+为最大值的区间”不可能重合，不影响计数。</li>
+</ul>
+<p><span class="math display">\[
+\begin{aligned}
+     ans
+     &amp;=\sum_{i}\sum_{j}\sum_{k}
+     (a_i-a_j)(a_i-a_k)x_iy_jy_k\\
+     &amp;=\sum_{i}x_i\sum_{j}\sum_{k}
+     \left[a_i^2-a_i\left(a_j+a_k\right)+a_ja_k\right]y_jy_k\\
+     &amp;=\sum_{i}x_i
+     \left[
+         a_i^2\sum_{j}\sum_{k}y_jy_k-
+         a_i\sum_{j}\sum_{k}
+         \left(a_j+a_k\right)y_jy_k+
+         \sum_{j}\sum_{k}a_ja_ky_jy_k
+     \right]\\
+     &amp;=\sum_{i}x_i
+     \left[
+         a_i^2\sum_{j}\sum_{k}y_jy_k-
+         a_i
+         \left(
+             \sum_{j}\sum_{k}
+             a_jy_jy_k+
+             \sum_{j}\sum_{k}
+             a_ky_jy_k
+         \right)+
+         \sum_{j}\sum_{k}a_jy_ja_ky_k
+     \right]
+\end{aligned}
+\]</span></p>
+<ul>
+<li>注意到：对于数列 <span
+class="math inline">\(\{a_n\},\{b_n\}\)</span> <span
+class="math display">\[\sum_{i}\sum_{j}a_ib_j=\sum_{i}\left(a_i\sum_{j}b_j\right)=\left(\sum_{i}a_i\right)\left(\sum_{j}b_j\right)\]</span></li>
+</ul>
+<p><span class="math display">\[
+\begin{aligned}
+     ans
+     &amp;=\sum_{i}x_i
+     \left[
+         a_i^2\left(\sum_{j}y_j\right)\left(\sum_{k}y_k\right)-
+         a_i\left[
+             \left(\sum_{j}a_jy_j\right)\left(\sum_{k}y_k\right)+
+             \left(\sum_{j}y_j\right)\left(\sum_{k}a_ky_k\right)
+         \right]+
+         \left(\sum_{j}a_jy_j\right)\left(\sum_{k}a_ky_k\right)
+     \right]
+\end{aligned}
+\]</span></p>
+<p>化简过程中应尽可能将 <span class="math inline">\(j,k\)</span>
+有关的项分离，使之可以被树状数组维护，即避免出现 <span
+class="math inline">\(\sum_{j}\sum_{k}f(j)g(k)\)</span>
+的出现。</p></li>
+<li><p>到此为止，我们已经通过树状数组维护 <span
+class="math inline">\(\sum_{j}y_j,\sum_{k}y_k,\sum_{j}a_jy_j,\sum_{k}a_ky_k\)</span>
+来计算 <span class="math inline">\(ans\)</span>
+了，但是上式还可以继续化简使得代码更加简洁，记</p>
+<p><span class="math display">\[
+\begin{aligned}
+L_y&amp;(i)&amp;=&amp;\sum_{j}y_j\\
+R_y&amp;(i)&amp;=&amp;\sum_{k}y_k\\
+L_{ay}&amp;(i)&amp;=&amp;\sum_{j}a_jy_j\\
+R_{ay}&amp;(i)&amp;=&amp;\sum_{k}a_ky_k
+\end{aligned}
+\]</span></p>
+<p>则 <span class="math inline">\(ans\)</span> 可简写为：</p>
+<p><span class="math display">\[
+\begin{aligned}
+     ans
+     &amp;=\sum_{i}x_i
+     \left[
+         a_i^2L_y(i)R_y(i)-
+         a_i\left[L_{ay}(i)R_y(i)+L_y(i)R_{ay}(i)\right]+
+         L_{ay}(i)R_{ay}(i)
+     \right]
+\end{aligned}
+\]</span></p>
+<p>观察各项系数</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"></th>
+<th style="text-align: center;"><span
+class="math inline">\(L_y(i)\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(L_{ay}(i)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span
+class="math inline">\(R_y(i)\)</span></td>
+<td style="text-align: center;"><span
+class="math inline">\(a_i^2\)</span></td>
+<td style="text-align: center;"><span
+class="math inline">\(-a_i\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span
+class="math inline">\(R_{ay}(i)\)</span></td>
+<td style="text-align: center;"><span
+class="math inline">\(-a_i\)</span></td>
+<td style="text-align: center;"><span
+class="math inline">\(1\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>可因式分解</p>
+<p><span class="math display">\[
+\begin{aligned}
+     ans
+     &amp;=\sum_{i}x_i
+     \left[
+         a_iL_y(i)-L_{ay}(i)
+     \right]
+     \left[
+         a_iR_y(i)-R_{ay}(i)
+     \right]
+\end{aligned}
+\]</span></p>
+<p>在从左到右枚举 <span class="math inline">\(i\)</span>
+的同时，把树状数组当作桶数组使用，以 <span
+class="math inline">\(a_i\)</span> 为关键字，把 <span
+class="math inline">\(y_i,a_iy_i\)</span> 放进相应的桶里，同时支持查询
+<span class="math inline">\(i\)</span> 左/右侧比 <span
+class="math inline">\(a_i\)</span> 小的 <span
+class="math inline">\(L,R\)</span>，就可以 <span
+class="math inline">\(O(n\log n)\)</span> 地计算 <span
+class="math inline">\(ans\)</span> 了。</p></li>
+</ol>
+<h2 id="代码">代码</h2>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> int long long</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">1e6</span>+<span class="number">5</span>,p=<span class="number">9712176</span>;</span><br><span class="line"><span class="type">int</span> n,a[N],lb[N],ls[N],rb[N],rs[N],x[N],y[N],ans;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">tree</span>&#123;</span><br><span class="line">    <span class="type">int</span> data[N+<span class="number">10</span>]=&#123;&#125;;</span><br><span class="line">    <span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">lowbit</span><span class="params">(<span class="type">int</span> x)</span></span>&#123;<span class="keyword">return</span> x&amp;-x;&#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">add</span><span class="params">(<span class="type">int</span> i,<span class="type">int</span> x)</span></span>&#123;<span class="keyword">while</span>(i&lt;=N<span class="number">-5</span>)data[i]+=x,i+=<span class="built_in">lowbit</span>(i);&#125;</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">sum</span><span class="params">(<span class="type">int</span> i)</span></span>&#123;<span class="type">int</span> ans=<span class="number">0</span>;<span class="keyword">while</span>(i)ans+=data[i],i-=<span class="built_in">lowbit</span>(i);<span class="keyword">return</span> ans;&#125;</span><br><span class="line">&#125;l1,r1,l2,r2;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">init</span><span class="params">(<span class="type">bool</span> flag,function&lt;<span class="type">bool</span>(<span class="type">int</span> a,<span class="type">int</span> b)&gt; cmp,<span class="type">int</span> *ans)</span></span>&#123;</span><br><span class="line">    stack&lt;<span class="type">int</span>&gt; stk;</span><br><span class="line">    stk.<span class="built_in">push</span>(flag?n+<span class="number">1</span>:<span class="number">0</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=flag?n:<span class="number">1</span>;flag?i&gt;=<span class="number">1</span>:i&lt;=n;flag?i--:i++)&#123;</span><br><span class="line">        <span class="keyword">while</span>(!<span class="built_in">cmp</span>(a[stk.<span class="built_in">top</span>()],a[i])&amp;&amp;stk.<span class="built_in">size</span>()&gt;<span class="number">1</span>)stk.<span class="built_in">pop</span>();</span><br><span class="line">        ans[i]=stk.<span class="built_in">top</span>();</span><br><span class="line">        stk.<span class="built_in">push</span>(i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);cin.<span class="built_in">tie</span>(<span class="number">0</span>);cout.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">    cin&gt;&gt;n;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++) cin&gt;&gt;a[i];</span><br><span class="line">    <span class="built_in">init</span>(<span class="number">0</span>,[](<span class="type">int</span> a,<span class="type">int</span> b)&#123;<span class="keyword">return</span> a&lt;b;&#125;,ls);</span><br><span class="line">    <span class="built_in">init</span>(<span class="number">0</span>,[](<span class="type">int</span> a,<span class="type">int</span> b)&#123;<span class="keyword">return</span> a&gt;b;&#125;,lb);</span><br><span class="line">    <span class="built_in">init</span>(<span class="number">1</span>,[](<span class="type">int</span> a,<span class="type">int</span> b)&#123;<span class="keyword">return</span> a&lt;b;&#125;,rs);</span><br><span class="line">    <span class="built_in">init</span>(<span class="number">1</span>,[](<span class="type">int</span> a,<span class="type">int</span> b)&#123;<span class="keyword">return</span> a&gt;b;&#125;,rb);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++) x[i]=(i-ls[i])%p*(rs[i]-i)%p,y[i]=(i-lb[i])%p*(rb[i]-i)%p;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;r1.<span class="built_in">add</span>(a[i],y[i]%p);r2.<span class="built_in">add</span>(a[i],a[i]*y[i]%p);&#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        a[i]%=p;</span><br><span class="line">        (ans+=x[i]%p*(a[i]*l1.<span class="built_in">sum</span>(a[i]<span class="number">-1</span>)%p-l2.<span class="built_in">sum</span>(a[i]<span class="number">-1</span>)%p+p)%p*(a[i]*r1.<span class="built_in">sum</span>(a[i]<span class="number">-1</span>)%p-r2.<span class="built_in">sum</span>(a[i]<span class="number">-1</span>)%p+p)%p)%=p;</span><br><span class="line">        l1.<span class="built_in">add</span>(a[i],y[i]%p);l2.<span class="built_in">add</span>(a[i],a[i]*y[i]%p);</span><br><span class="line">        r1.<span class="built_in">add</span>(a[i],-y[i]%p);r2.<span class="built_in">add</span>(a[i],-a[i]*y[i]%p);</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;ans;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1298,167 +1552,8 @@ S_a=\frac{4}{3}S_{\triangle ABC}
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://tioibiy.github.io/2022/12/08/qqgg/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/img/icon.png">
-      <meta itemprop="name" content="Toby">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hi!">
-      <meta itemprop="description" content="Tioibiy的博客">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Hi!">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/12/08/qqgg/" class="post-title-link" itemprop="url">qqgg</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2022-12-08 09:06:14" itemprop="dateCreated datePublished" datetime="2022-12-08T09:06:14+08:00">2022-12-08</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-01-08 13:15:52" itemprop="dateModified" datetime="2023-01-08T13:15:52+08:00">2023-01-08</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%9B%B4%E6%96%B0%E4%B8%AD/" itemprop="url" rel="index"><span itemprop="name">更新中</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>1.7k</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>2 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="qqgg的东西增加了">qqgg的东西增加了</h1>
-<ol type="1">
-<li><p>为什么物理中量纲不同不能运算，比如，我们不能将面积<span
-class="math inline">\((m^2)\)</span>加上一个距离<span
-class="math inline">\((m)\)</span>。可是数学中却可以写出不齐次的多项式，比如<span
-class="math inline">\(ax^2+bx+c\)</span>，或者<span
-class="math inline">\(\sum_{i=0}a_ix^i\)</span>。如果硬是将<span
-class="math inline">\(2m^2\)</span>加上<span
-class="math inline">\(1m\)</span>，写作<span
-class="math inline">\(2m^2+1m\)</span>，确实可以这么写，但是几乎无法找到现实中对应的物理量。即使物理中存在的二次函数，如匀速直线运动中位移随初速度和时间的变化：<span
-class="math inline">\(\vec{x}=\vec{v_0}t+\frac{1}{2}\vec{a}t^2\)</span>，它的量纲也是正确的，因为<span
-class="math inline">\(\vec{x},\vec{v_0},\vec{a}\)</span>的量纲不同，“恰好”互相抵消。可是我们却不能赋予数学中不同次项系数<span
-class="math inline">\(a_i\)</span>以不同的量纲……<br />
-不过这或许就是为什么要将角度转化为弧度的一种解释了吧，毕竟弧度没有单位，而数学不需要单位<br />
-<div class="note info"><p>或许可以写成</p>
-<p><span class="math inline">\(\begin{pmatrix}  2 \\  1 \end{pmatrix}
-\begin{pmatrix}  m^2 \\  m \end{pmatrix}\)</span></p>
-<p>甚至可以定义他们的运算</p>
-<p><span class="math inline">\(\begin{pmatrix}  2 \\  1 \end{pmatrix}
-\begin{pmatrix}  m^2 \\  m \end{pmatrix} + \begin{pmatrix}  3 \\  5
-\end{pmatrix} \begin{pmatrix}  m^2 \\  m \end{pmatrix} =
-\begin{pmatrix}  5 \\  6 \end{pmatrix} \begin{pmatrix}  m^2 \\  m
-\end{pmatrix}\)</span></p>
-</div></p></li>
-<li><p>植食性昆虫和植物抗虫反应是他们共同进化的结果<br />
-<div class="note info"><p>如：植物遭到昆虫蚕食后会分泌茉莉酸，启动抗虫反应，分泌杀虫物质，产生吸引昆虫天敌的挥发物；而烟粉<ruby>虱<rt>shī</rt></ruby>则能合成<span
-class="math inline">\(Bt56\)</span>蛋白，随烟粉虱唾液进入植物，抑制茉莉酸启动的抗虫反应</p>
-</div>
-那么，如果放任地球上的生命如此“共同进化”，会不会导致生物之间耦合过多，愈发臃肿，各个物种之间尔虞我诈，关系层层叠叠，导致地球上的生物作为一个整体，更加不适应宇宙这个大环境？<br />
-就像是神经网络过拟合一样，在训练集上表现很好，但是无法泛化到更加复杂的系统中</p></li>
-<li><p>积分是对极小值求和 <span class="math display">\[
-\begin{aligned}
-\int_{l}^{r}f(x)dx
-=&amp;\lim_{n \to
-\infty}\sum_{i=1}^{n}\frac{r-l}{n}f\left((1-\frac{i}{n})l+\frac{i}{n}r\right)\\
-=&amp;\lim_{n \to
-\infty}\frac{r-l}{n}\sum_{i=1}^{n}f\left((1-\frac{i}{n})l+\frac{i}{n}r\right)
-\end{aligned}
-\]</span> 那能不能定义极小值的积？ <span class="math display">\[
-\begin{aligned}
-P_{l}^{r}f(x)dx
-=&amp;\lim_{n \to
-\infty}\prod_{i=1}^{n}\frac{r-l}{n}f\left((1-\frac{i}{n})l+\frac{i}{n}r\right)\\
-=&amp;\lim_{n \to \infty}\left(\frac{r-l}{n}
-\right)^n\prod_{i=1}^{n}f\left((1-\frac{i}{n})l+\frac{i}{n}r\right)
-\end{aligned}
-\]</span> 不过没什么实际意义</p></li>
-<li><blockquote class="blockquote-center">
-<p>随机变换符号的位置是有效的简化手段<br />
-也是构建人脑无法处理的复杂论证过程的简便方式<br />
-——《微积分的力量》</p>
-
-</blockquote>
-<p>生动形象，就像傅里叶变换和小奥解方程一样<br />
-傅里叶变换使我们可以从另一种角度看待和运算函数，同时不丢失函数所携带的信息；<br />
-在我们最初理解“方程”的时候会用“天平”来形容它：两边同时加上相同的量，或将天平两边的量同时翻倍，天平仍然平衡<br />
-他们都通过“简单”的符号变换，在人脑能理解的证明过程抽提出“定理”，以期解决复杂的问题<br />
-解方程时不一定需要思考“两边同时增加或减少<span
-class="math inline">\((2x+3)\)</span>，等式仍然成立”，而是将他作为一个烂熟于心的定理来使用，这样才能用人脑仍能理解的方法解决更复杂的问题</p></li>
-</ol>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 </div>
@@ -1469,7 +1564,7 @@ class="math inline">\((2x+3)\)</span>，等式仍然成立”，而是将他作�
 
   <div class="copyright">
     &copy; 
-    <span itemprop="copyrightYear">2023</span>
+    <span itemprop="copyrightYear">2024</span>
     <span class="with-love">
       <i class="fa fa-heart"></i>
     </span>
@@ -1481,14 +1576,14 @@ class="math inline">\((2x+3)\)</span>，等式仍然成立”，而是将他作�
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">28k</span>
+    <span title="站点总字数">32k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">26 分钟</span>
+    <span title="站点阅读时长">29 分钟</span>
   </span>
 </div><script color="109,33,110" opacity="0.5" zIndex="-1" count="99" src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
 
