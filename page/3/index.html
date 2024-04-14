@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#5AA4AE"><meta name="generator" content="Hexo 6.3.0">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/icon.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/icon.png">
-  <link rel="mask-icon" href="/images/icon.png" color="#5AA4AE">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/icon.png">
+  <link rel="mask-icon" href="/img/icon.png" color="#5AA4AE">
 
 <link rel="stylesheet" href="/css/main.css">
 
@@ -52,7 +52,7 @@
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
-  <script src="/node_modules/three/build/three.min.js"></script>
+  
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -342,7 +342,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-04-14 20:36:30" itemprop="dateModified" datetime="2024-04-14T20:36:30+08:00">2024-04-14</time>
+      <time title="修改时间：2024-04-14 22:24:45" itemprop="dateModified" datetime="2024-04-14T22:24:45+08:00">2024-04-14</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -361,14 +361,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>1.4k</span>
+      <span>2.2k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
+      <span>2 分钟</span>
     </span>
 </div>
 
@@ -382,10 +382,41 @@
           <script type="text/javascript" color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="dist/canvas-nest.js"></script>
 <p><a id='test'></a></p>
 <h1 id="three.js-测试">three.js 测试</h1>
-<div id="container">
+<div id="container" style="width: 100%; height: 100vh; display: block;">
 
 </div>
-<script type="text/javascript">
+<!-- <script type="module">
+    import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.163.0/build/three.module.min.js';
+
+    var container = document.getElementById('container');
+    var renderer = new THREE.WebGLRenderer();
+    renderer.setSize(container.offsetWidth, container.offsetHeight);
+    console.log(container.offsetHeight);
+    container.appendChild(renderer.domElement);
+
+    var scene = new THREE.Scene();
+    var camera = new THREE.PerspectiveCamera(75, container.offsetWidth/container.offsetHeight, 0.1, 1000);
+    camera.position.z = 5;
+
+    var geometry = new THREE.BoxGeometry(1, 1, 1);
+    var material = new THREE.MeshBasicMaterial({color: 0x00ff00});
+    var cube = new THREE.Mesh(geometry, material);
+    scene.add(cube);
+
+    function animate() {
+        requestAnimationFrame(animate);
+        cube.rotation.x += 0.01;
+        cube.rotation.y += 0.01;
+        renderer.render(scene, camera);
+    }
+    animate();
+</script> -->
+<script type="module">
+    import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.163.0/build/three.module.min.js';
+    import { OBJLoader } from 'https://cdn.jsdelivr.net/npm/three-obj-loader-es6-module';
+
+    // var scene = new THREE.Scene()
+    // console.log(scene)
     var container = document.getElementById('container');
     var renderer = new THREE.WebGLRenderer();
     var width = container.offsetWidth;
@@ -411,7 +442,29 @@
         requestAnimationFrame(animate);
         renderer.render(scene, camera);
     }
+    animate();
+    // var scene = new THREE.Scene();
+    // var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+    // // // var renderer = new THREE.WebGLRenderer();
+    
+    // renderer.setSize( window.innerWidth, window.innerHeight );
+    
+    // var geometry = new THREE.BoxGeometry();
+    // var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+    // var cube = new THREE.Mesh( geometry, material );
+    // scene.add(cube);
+    
+    // camera.position.z = 5;
+    
+    // function animate() {
+    //     requestAnimationFrame( animate );
+    //     cube.rotation.x += 0.01;
+    //     cube.rotation.y += 0.01;
+    //     renderer.render( scene, camera );
+    // }
+    
     // animate();
+
 </script>
 <h1 id="test">Test</h1>
 <h1 id="一级标题">一级标题</h1>
@@ -633,7 +686,7 @@ target="_blank" rel="noopener" href="https://dongguagua.gitee.io/archives/29bfe8
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">34 分钟</span>
+    <span title="站点阅读时长">35 分钟</span>
   </span>
 </div><script color="109,33,110" opacity="0.5" zIndex="-1" count="99" src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
 
