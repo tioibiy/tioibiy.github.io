@@ -52,6 +52,7 @@
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
+  <script src="/node_modules/three/build/three.min.js"></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -341,7 +342,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-07-17 10:16:35" itemprop="dateModified" datetime="2023-07-17T10:16:35+08:00">2023-07-17</time>
+      <time title="修改时间：2024-04-14 20:36:30" itemprop="dateModified" datetime="2024-04-14T20:36:30+08:00">2024-04-14</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -360,7 +361,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>798</span>
+      <span>1.4k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -380,6 +381,38 @@
     <div class="post-body" itemprop="articleBody">
           <script type="text/javascript" color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="dist/canvas-nest.js"></script>
 <p><a id='test'></a></p>
+<h1 id="three.js-测试">three.js 测试</h1>
+<div id="container">
+
+</div>
+<script type="text/javascript">
+    var container = document.getElementById('container');
+    var renderer = new THREE.WebGLRenderer();
+    var width = container.offsetWidth;
+    var height = container.offsetHeight;
+    renderer.setSize(width, height);
+    container.appendChild(renderer.domElement);
+
+    // 创建场景，相机，光源等
+    var scene = new THREE.Scene();
+    var camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
+    var light = new THREE.AmbientLight(0x404040);
+    scene.add(light);
+
+    // 加载 .obj 模型
+    var loader = new THREE.OBJLoader();
+    loader.load('/models/test.obj', function (object) {
+        scene.add(object);
+        renderer.render(scene, camera);
+    });
+
+    // 渲染循环
+    function animate() {
+        requestAnimationFrame(animate);
+        renderer.render(scene, camera);
+    }
+    // animate();
+</script>
 <h1 id="test">Test</h1>
 <h1 id="一级标题">一级标题</h1>
 <h2 id="二级标题">二级标题</h2>
@@ -593,7 +626,7 @@ target="_blank" rel="noopener" href="https://dongguagua.gitee.io/archives/29bfe8
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">37k</span>
+    <span title="站点总字数">38k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
